@@ -7,7 +7,9 @@ import { motion, useAnimation } from "framer-motion"
 import { detectMobileAndTablet, isSSR } from "../../utils"
 import { useOnScreen } from "../../hooks/"
 import ContentWrapper from "../../styles/ContentWrapper"
+import Underlining from "../../styles/Underlining"
 import Button from "../../styles/Button"
+import Theme from "../../styles/Theme"
 
 const StyledSection = styled.section`
   width: 100%;
@@ -30,6 +32,14 @@ const StyledContentWrapper = styled(ContentWrapper)`
       padding-left: 2.5rem;
     }
     .section-title {
+      padding-right: 2.5rem;
+      padding-left: 2.5rem;
+      @media (min-width: ${({ theme }) => theme.breakpoints.md}) {
+        padding-right: 0;
+        padding-left: 0;
+      }
+    }
+    .section-paragraph {
       padding-right: 2.5rem;
       padding-left: 2.5rem;
       @media (min-width: ${({ theme }) => theme.breakpoints.md}) {
@@ -100,13 +110,13 @@ const StyledInterests = styled.div`
     justify-content: flex-start;
     align-items: center;
     padding: 1rem;
-    border: 0.125rem solid ${({ theme }) => theme.colors.primary};
-    border-radius: ${({ theme }) => theme.borderRadius};
+
     .icon {
       margin-right: 0.5rem;
     }
   }
 `
+const AnimatedUnderlining = motion.custom(Underlining)
 
 const Interests = ({ content }) => {
   const { exports, frontmatter } = content[0].node
@@ -119,6 +129,7 @@ const Interests = ({ content }) => {
 
   const iControls = useAnimation()
   const bControls = useAnimation()
+  const uControls = useAnimation()
 
   useEffect(() => {
     // If mobile or tablet, show all interests initially
@@ -151,7 +162,31 @@ const Interests = ({ content }) => {
     <StyledSection id="interests">
       <StyledContentWrapper>
         <h3 className="section-title">{frontmatter.title}</h3>
-        <p>hihi</p>
+        <p className="section-paragraph">
+          {frontmatter.intro}{" "}
+          <a href="https://www.sfsu.edu/">
+            <AnimatedUnderlining animate={uControls} color="secondary" big>
+              {frontmatter.school}
+            </AnimatedUnderlining>
+          </a>{" "}
+          {frontmatter.join}{" "}
+          <a href="https://ez.football/hkg/en/">
+            <AnimatedUnderlining animate={uControls} color="orange" big>
+              {frontmatter.ezshopnet}
+            </AnimatedUnderlining>
+          </a>{" "}
+          {frontmatter.where} <br></br>
+          <br></br>
+          {frontmatter.later}{" "}
+          <a href="https://intersog.com/">
+            <AnimatedUnderlining animate={uControls} color="green" big>
+              {frontmatter.intersog}
+            </AnimatedUnderlining>
+          </a>{" "}
+          {frontmatter.work} <br></br>
+          <br></br>
+          {frontmatter.here}
+        </p>
         <StyledInterests itemCount={interests.length} ref={ref}>
           {interests.slice(0, shownInterests).map(({ name, icon }, key) => (
             <motion.div

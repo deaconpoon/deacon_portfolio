@@ -17,8 +17,8 @@ const IndexPage = ({ data }) => (
     <SEO title="Portfolio Minimal - A Gatsby Starter." />
     <Hero content={data.hero.edges} />
     {/* Articles is populated via Medium RSS Feed fetch */}
-    <About content={data.about.edges} />
     <Articles />
+    <About content={data.about.edges} />
     <Interests content={data.interests.edges} />
     <Projects content={data.projects.edges} />
     <Contact content={data.contact.edges} />
@@ -94,6 +94,15 @@ export const pageQuery = graphql`
           }
           frontmatter {
             title
+            intro
+            school
+            join
+            ezshopnet
+            where
+            later
+            intersog
+            work
+            here
           }
         }
       }

@@ -1,5 +1,5 @@
-const config = require('./src/config');
-const theme = require('./src/styles/Theme')
+const config = require("./src/config")
+const theme = require("./src/styles/Theme")
 
 module.exports = {
   siteMetadata: {
@@ -9,12 +9,12 @@ module.exports = {
     siteUrl: config.siteUrl,
   },
   plugins: [
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`,
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-sitemap`,
     `gatsby-plugin-robots-txt`,
     `gatsby-plugin-styled-components`,
-    `gatsby-plugin-sharp`,
-    `gatsby-transformer-sharp`,
     `gatsby-plugin-offline`,
     `gatsby-plugin-netlify`,
     // {
