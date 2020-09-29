@@ -137,22 +137,22 @@ const Hero = ({ content }) => {
             </a>{" "}
             {frontmatter.look}{" "}
             <a href="https://www.linkedin.com/in/deaconpoon/">
-              <AnimatedUnderlining animate={uControls} color="green" big>
+              <AnimatedUnderlining animate={uControls} color="orange" big>
                 {frontmatter.experience}
               </AnimatedUnderlining>
             </a>{" "}
             <a href="https://github.com/deaconpoon">
-              <AnimatedUnderlining animate={uControls} color="blue" big>
+              <AnimatedUnderlining animate={uControls} color="green" big>
                 {frontmatter.work}
               </AnimatedUnderlining>
             </a>{" "}
             <a href="https://medium.com/@deaconpoon">
-              <AnimatedUnderlining animate={uControls} color="pink" big>
+              <AnimatedUnderlining animate={uControls} color="blue" big>
                 {frontmatter.idea}
               </AnimatedUnderlining>
             </a>{" "}
             {frontmatter.talk}{" "}
-            <AnimatedUnderlining animate={uControls} color="orange" big>
+            <AnimatedUnderlining animate={uControls} color="pink" big>
               <Link to={"/#contact"}>{frontmatter.contact}</Link>
             </AnimatedUnderlining>
           </h1>
