@@ -125,7 +125,7 @@ const Hero = ({ content }) => {
           <h1 className="subtitle">
             {frontmatter.subtitlePrefix}{" "}
             {/* Hover state color can be set in useEffect hook */}
-            <a href="https://www.google.com/">
+            <a href="http://www.deaconpoon.com/">
               <AnimatedUnderlining
                 animate={uControls}
                 color="secondary"
