@@ -165,13 +165,23 @@ const Interests = ({ content }) => {
         <p className="section-paragraph">
           {frontmatter.intro}{" "}
           <a href="https://www.sfsu.edu/">
-            <AnimatedUnderlining animate={uControls} color="secondary" big>
+            <AnimatedUnderlining
+              animate={uControls}
+              color="secondary"
+              hoverColor="secondary"
+              big
+            >
               {frontmatter.school}
             </AnimatedUnderlining>
           </a>{" "}
           {frontmatter.join}{" "}
           <a href="https://ez.football/hkg/en/">
-            <AnimatedUnderlining animate={uControls} color="orange" big>
+            <AnimatedUnderlining
+              animate={uControls}
+              color="orange"
+              hoverColor="orange"
+              big
+            >
               {frontmatter.ezshopnet}
             </AnimatedUnderlining>
           </a>{" "}
@@ -179,7 +189,12 @@ const Interests = ({ content }) => {
           <br></br>
           {frontmatter.later}{" "}
           <a href="https://intersog.com/">
-            <AnimatedUnderlining animate={uControls} color="green" big>
+            <AnimatedUnderlining
+              animate={uControls}
+              color="green"
+              hoverColor="green"
+              big
+            >
               {frontmatter.intersog}
             </AnimatedUnderlining>
           </a>{" "}

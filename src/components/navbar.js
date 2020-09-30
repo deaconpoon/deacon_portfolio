@@ -67,7 +67,7 @@ const Navbar = () => {
           </Link>
         )
       })}
-      <Link className="cta-btn" to={button.url}>{button.name}</Link>
+      {/*   <Link className="cta-btn" to={button.url}>{button.name}</Link> */}
     </StyledNav>
   )
 }

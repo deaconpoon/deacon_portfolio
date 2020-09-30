@@ -38,7 +38,7 @@ const StyledLink = styled(Link)`
   font-size: 0.875rem;
   font-weight: 700;
   text-transform: uppercase;
-  color: #ffffff;
+  color: ${({ theme }) => theme.colors.background};
   letter-spacing: 1px;
 `
 
@@ -48,11 +48,13 @@ const Footer = () => (
       <Link to="/" aria-label="home">
         <Logo color="white" size="1.5rem" />
       </Link>
-      <div className="footer-links">
+      {/*  <div className="footer-links">
         {footerLinks.map(({ name, url }, key) => (
-          <StyledLink key={key} to={url}>{name}</StyledLink>
+          <StyledLink key={key} to={url}>
+            {name}
+          </StyledLink>
         ))}
-      </div>
+      </div> */}
     </StyledContentWrapper>
   </StyledFooter>
 )

@@ -137,17 +137,32 @@ const Hero = ({ content }) => {
             </a>{" "}
             {frontmatter.look}{" "}
             <a href="https://www.linkedin.com/in/deaconpoon/">
-              <AnimatedUnderlining animate={uControls} color="orange" big>
+              <AnimatedUnderlining
+                animate={uControls}
+                color="orange"
+                hoverColor="orange"
+                big
+              >
                 {frontmatter.experience}
               </AnimatedUnderlining>
             </a>{" "}
             <a href="https://github.com/deaconpoon">
-              <AnimatedUnderlining animate={uControls} color="green" big>
+              <AnimatedUnderlining
+                animate={uControls}
+                color="green"
+                hoverColor="green"
+                big
+              >
                 {frontmatter.work}
               </AnimatedUnderlining>
             </a>{" "}
             <a href="https://medium.com/@deaconpoon">
-              <AnimatedUnderlining animate={uControls} color="blue" big>
+              <AnimatedUnderlining
+                animate={uControls}
+                color="blue"
+                hoverColor="blue"
+                big
+              >
                 {frontmatter.idea}
               </AnimatedUnderlining>
             </a>{" "}
