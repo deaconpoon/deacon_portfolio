@@ -156,6 +156,7 @@ const Hero = ({ content }) => {
                 {frontmatter.work}
               </AnimatedUnderlining>
             </a>{" "}
+            {frontmatter.and}{" "}
             <a href="https://medium.com/@deaconpoon">
               <AnimatedUnderlining
                 animate={uControls}

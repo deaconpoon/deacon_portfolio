@@ -45,6 +45,7 @@ export const pageQuery = graphql`
             look
             experience
             work
+            and
             idea
             talk
             contact

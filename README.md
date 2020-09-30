@@ -1,8 +1,8 @@
-https://www.deaconpoon.com/
+http://www.deaconpoon.com/
 
 # 👋🏼 Welcome to my website, a place to showcase my experience, work, and ideas.
 
-## 👨🏻‍💻 It is built with the awesome Gatsby.js
+## 👨🏻‍💻 Built with the awesome Gatsby.js
 
 - Did I mentioned I absolutely love Gatsby?
 
