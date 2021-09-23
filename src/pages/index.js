@@ -103,6 +103,9 @@ export const pageQuery = graphql`
             later
             intersog
             work
+            work2
+            wello
+            work3
             here
           }
         }

@@ -191,14 +191,25 @@ const Interests = ({ content }) => {
           <a href="https://intersog.com/">
             <AnimatedUnderlining
               animate={uControls}
-              color="green"
-              hoverColor="green"
+              color="blue"
+              hoverColor="blue"
               big
             >
               {frontmatter.intersog}
             </AnimatedUnderlining>
           </a>{" "}
           {frontmatter.work} <br></br>
+          <br></br>
+          {frontmatter.work2}{" "}
+       
+          <a href="https://wello.ca">
+            <AnimatedUnderlining
+              animate={uControls}
+              color="green"
+              hoverColor="green"
+              big
+            >   {frontmatter.wello}</AnimatedUnderlining> </a>{" "}
+            {frontmatter.work3} <br></br>
           <br></br>
           {frontmatter.here}
         </p>
