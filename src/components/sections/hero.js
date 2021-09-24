@@ -146,6 +146,16 @@ const Hero = ({ content }) => {
                 {frontmatter.experience}
               </AnimatedUnderlining>
             </a>{" "}
+            <a href="https://drive.google.com/file/d/1X4JXqkCUs2zioVqFmlB2QCoxfP3dJ_0o/view?usp=sharing">
+              <AnimatedUnderlining
+                animate={uControls}
+                color="green"
+                hoverColor="green"
+                big
+              >
+                {frontmatter.resume}
+              </AnimatedUnderlining>
+            </a>{" "}
             <a href="https://github.com/deaconpoon">
               <AnimatedUnderlining
                 animate={uControls}
@@ -153,7 +163,7 @@ const Hero = ({ content }) => {
                 hoverColor="green"
                 big
               >
-                {frontmatter.work}
+                {frontmatter.code}
               </AnimatedUnderlining>
             </a>{" "}
             {frontmatter.and}{" "}

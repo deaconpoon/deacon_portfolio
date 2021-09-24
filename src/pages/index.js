@@ -44,6 +44,7 @@ export const pageQuery = graphql`
             subtitle
             look
             experience
+            resume
             work
             and
             idea
