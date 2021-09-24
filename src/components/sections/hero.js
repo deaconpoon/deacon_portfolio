@@ -128,8 +128,8 @@ const Hero = ({ content }) => {
             <a href="http://www.deaconpoon.com/">
               <AnimatedUnderlining
                 animate={uControls}
-                color="secondary"
-                hoverColor="secondary"
+                color="yellow"
+                hoverColor="yellow"
                 big
               >
                 {frontmatter.subtitle}
@@ -139,8 +139,8 @@ const Hero = ({ content }) => {
             <a href="https://www.linkedin.com/in/deaconpoon/">
               <AnimatedUnderlining
                 animate={uControls}
-                color="orange"
-                hoverColor="orange"
+                color="secondary"
+                hoverColor="secondary"
                 big
               >
                 {frontmatter.experience}
@@ -149,8 +149,8 @@ const Hero = ({ content }) => {
             <a href="https://drive.google.com/file/d/1X4JXqkCUs2zioVqFmlB2QCoxfP3dJ_0o/view?usp=sharing">
               <AnimatedUnderlining
                 animate={uControls}
-                color="green"
-                hoverColor="green"
+                color="orange"
+                hoverColor="orange"
                 big
               >
                 {frontmatter.resume}
