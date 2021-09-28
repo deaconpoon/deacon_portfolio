@@ -3,6 +3,7 @@ import PropTypes from "prop-types"
 import styled from "styled-components"
 
 import config from "../config"
+import logo from '../../public/asset/logo.jpg'
 
 const { siteShortTitle } = config
 
@@ -22,7 +23,8 @@ const StyledLogo = styled.div`
 
 const Logo = ({ size, color }) => (
   <StyledLogo color={color} size={size}>
-    {siteShortTitle}
+    {/* {siteShortTitle} */}
+    <img src={logo}></img>
   </StyledLogo>
 )
 
