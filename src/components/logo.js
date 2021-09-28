@@ -2,10 +2,7 @@ import React from "react"
 import PropTypes from "prop-types"
 import styled from "styled-components"
 
-import config from "../config"
-import logo from '../../public/asset/logo.jpg'
-
-const { siteShortTitle } = config
+import logo from '../../static/logo.jpg'
 
 const StyledLogo = styled.div`
   position: relative;

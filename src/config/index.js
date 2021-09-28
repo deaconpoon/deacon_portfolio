@@ -3,7 +3,7 @@ module.exports = {
   siteTitle: "Deacon Poon",
   siteShortTitle: "DEACON", // Used as logo text in header, footer, and splash screen
   siteDescription: "A place where I explore with different ideas",
-  siteUrl: "reverent-volhard-b67a22.netlify.app",
+  siteUrl: "https://www.deaconpoon.com",
   siteLanguage: "en_US",
   siteIcon: "src/content/favicon.png", // Relative to gatsby-config file
 
