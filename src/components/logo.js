@@ -2,7 +2,7 @@ import React from "react"
 import PropTypes from "prop-types"
 import styled from "styled-components"
 
-import logo from '../../static/logo.jpg'
+import logo from '../../static/logo.svg'
 
 const StyledLogo = styled.div`
   position: relative;
