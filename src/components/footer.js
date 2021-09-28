@@ -11,7 +11,7 @@ const { footerLinks } = Config
 const StyledFooter = styled.footer`
   width: 100%;
   height: ${({ theme }) => theme.footerHeight};
-  background: ${({ theme }) => theme.colors.primary};
+  background: ${({ theme }) => theme.colors.background};
   margin-top: 10rem;
 `
 
@@ -38,7 +38,7 @@ const StyledLink = styled(Link)`
   font-size: 0.875rem;
   font-weight: 700;
   text-transform: uppercase;
-  color: ${({ theme }) => theme.colors.background};
+  color: ${({ theme }) => theme.colors.primary};
   letter-spacing: 1px;
 `
 

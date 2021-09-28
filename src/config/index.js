@@ -1,6 +1,6 @@
 module.exports = {
   author: "Deacon",
-  siteTitle: "Deacon's portfolio",
+  siteTitle: "Deacon Poon",
   siteShortTitle: "DEACON", // Used as logo text in header, footer, and splash screen
   siteDescription: "A place where I explore with different ideas",
   siteUrl: "https://reverent-volhard-b67a22.netlify.app",

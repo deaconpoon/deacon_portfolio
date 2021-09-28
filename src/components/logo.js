@@ -21,10 +21,15 @@ const StyledLogo = styled.div`
   user-select: auto !important;
 `
 
+const StyledImg = styled.img`
+ max-width: 100%;
+    max-height: 100%;
+`
+
 const Logo = ({ size, color }) => (
   <StyledLogo color={color} size={size}>
     {/* {siteShortTitle} */}
-    <img src={logo}></img>
+    <StyledImg src={logo}></StyledImg>
   </StyledLogo>
 )
 
