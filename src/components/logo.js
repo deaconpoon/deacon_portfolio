@@ -6,7 +6,7 @@ import logo from '../../static/logo.svg'
 
 const StyledLogo = styled.div`
   position: relative;
-  z-index: 13;
+
 
   font-size: ${({ size }) => (size ? size : "1.75rem")};
   font-weight: 900;
@@ -19,8 +19,9 @@ const StyledLogo = styled.div`
 `
 
 const StyledImg = styled.img`
- max-width: 100%;
+    max-width: 100%;
     max-height: 100%;
+      z-index: 11;
 `
 
 const Logo = ({ size, color }) => (

@@ -17,7 +17,7 @@ module.exports = {
     lg: "1200px",
   },
   fonts: {
-    primary: "Roboto, Arial, sans-serif",
+    primary: "Josefin Sans, Arial, sans-serif",
   },
   borderRadius: "1rem",
   pageWidth: "62.5rem",
