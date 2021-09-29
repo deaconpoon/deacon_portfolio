@@ -20,6 +20,7 @@ const StyledSection = styled(motion.section)`
 `
 
 const StyledContentWrapper = styled(ContentWrapper)`
+filter: grayscale(100%);
   && {
     width: 100%;
     /* Don't stretch container over the full page width */
@@ -31,6 +32,7 @@ const StyledContentWrapper = styled(ContentWrapper)`
       margin-bottom: 0;
     }
     .profile {
+      filter: grayscale(100%);
       display: flex;
       flex-direction: column;
       justify-content: flex-start;
@@ -52,6 +54,7 @@ const StyledContentWrapper = styled(ContentWrapper)`
         }
       }
       .details {
+        
         font-size: 1.125rem;
         line-height: 2rem;
       }
@@ -86,7 +89,7 @@ const Contact = ({ content }) => {
             <strong>{frontmatter.name}</strong>
             <br />
             <a href={`mailto:${frontmatter.email}`}>
-              <Underlining color="secondary" hoverColor="secondary">
+              <Underlining color="grey_5" hoverColor="grey_light">
                 {frontmatter.email}
               </Underlining>
             </a>

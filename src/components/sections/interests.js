@@ -40,6 +40,7 @@ const StyledContentWrapper = styled(ContentWrapper)`
       }
     }
     .section-paragraph {
+      filter: grayscale(100%);
       padding-right: 2.5rem;
       padding-left: 2.5rem;
       @media (min-width: ${({ theme }) => theme.breakpoints.md}) {
@@ -51,6 +52,7 @@ const StyledContentWrapper = styled(ContentWrapper)`
 `
 
 const StyledInterests = styled.div`
+filter: grayscale(100%);
   display: grid;
   /* Calculate how many columns are needed, depending on interests count */
   grid-template-columns: repeat(
@@ -167,8 +169,8 @@ const Interests = ({ content }) => {
           <a href="https://www.sfsu.edu/">
             <AnimatedUnderlining
               animate={uControls}
-              color="secondary"
-              hoverColor="secondary"
+              color="grey_5"
+              hoverColor="grey_light"
               big
             >
               {frontmatter.school}
@@ -178,8 +180,8 @@ const Interests = ({ content }) => {
           <a href="https://ez.football/hkg/en/">
             <AnimatedUnderlining
               animate={uControls}
-              color="orange"
-              hoverColor="orange"
+              color="grey_5"
+              hoverColor="grey_light"
               big
             >
               {frontmatter.ezshopnet}
@@ -191,8 +193,8 @@ const Interests = ({ content }) => {
           <a href="https://intersog.com/">
             <AnimatedUnderlining
               animate={uControls}
-              color="blue"
-              hoverColor="blue"
+              color="grey_5"
+              hoverColor="grey_light"
               big
             >
               {frontmatter.intersog}
@@ -205,8 +207,8 @@ const Interests = ({ content }) => {
           <a href="https://wello.ca">
             <AnimatedUnderlining
               animate={uControls}
-              color="green"
-              hoverColor="green"
+              color="grey_5"
+              hoverColor="grey_light"
               big
             >   {frontmatter.wello}</AnimatedUnderlining> </a>{" "}
             {frontmatter.work3} <br></br>

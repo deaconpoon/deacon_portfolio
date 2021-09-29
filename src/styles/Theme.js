@@ -9,6 +9,10 @@ module.exports = {
     pink: "#fca9ec",
     text: "#000000",
     background: "#ffffff",
+    grey_dark: "#4F4F4F",
+    grey_light: "#BDBDBD",
+    grey_5: "#E0E0E0",
+    grey_6: "#F2F2F2",
   },
   breakpoints: {
     xs: "480px",
@@ -17,7 +21,7 @@ module.exports = {
     lg: "1200px",
   },
   fonts: {
-    primary: "Josefin Sans, Arial, sans-serif",
+    primary: "inter, Arial, sans-serif",
   },
   borderRadius: "1rem",
   pageWidth: "62.5rem",
