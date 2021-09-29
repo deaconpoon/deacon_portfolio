@@ -41,7 +41,7 @@ const StyledContentWrapper = styled(ContentWrapper)`
       margin-left: 0.75rem;
       width: 2.2rem;
       height: 2.2rem;
-      filter: grayscale(100%);
+   
       @media (min-width: ${({ theme }) => theme.breakpoints.sm}) {
         margin-left: 1rem;
         width: 3rem;
@@ -56,7 +56,7 @@ const StyledContentWrapper = styled(ContentWrapper)`
     }
     .subtitle {
       margin-top: -0.75rem;
-      filter: grayscale(100%);
+  
     }
     .description {
       font-size: 1.125rem;
@@ -130,8 +130,8 @@ const Hero = ({ content }) => {
             <a href="http://www.deaconpoon.com/">
               <AnimatedUnderlining
                 animate={uControls}
-                color="grey_5"
-                hoverColor="grey_5"
+                color="yellow"
+                hoverColor="yellow"
                 big
               >
                 {frontmatter.subtitle}
@@ -141,8 +141,8 @@ const Hero = ({ content }) => {
             <a href="https://www.linkedin.com/in/deaconpoon/">
               <AnimatedUnderlining
                 animate={uControls}
-                color="grey_5"
-                hoverColor="grey_5"
+                color="secondary"
+                hoverColor="secondary"
                 big
               >
                 {frontmatter.experience}
@@ -151,8 +151,8 @@ const Hero = ({ content }) => {
             <a href="https://drive.google.com/file/d/1X4JXqkCUs2zioVqFmlB2QCoxfP3dJ_0o/view?usp=sharing">
               <AnimatedUnderlining
                 animate={uControls}
-                color="grey_5"
-                hoverColor="grey_5"
+                color="orange"
+                hoverColor="orange"
                 big
               >
                 {frontmatter.resume}
@@ -161,8 +161,8 @@ const Hero = ({ content }) => {
             <a href="https://github.com/deaconpoon">
               <AnimatedUnderlining
                 animate={uControls}
-                color="grey_5"
-                hoverColor="grey_5"
+                color="green"
+                hoverColor="green"
                 big
               >
                 {frontmatter.code}
@@ -172,15 +172,15 @@ const Hero = ({ content }) => {
             <a href="https://medium.com/@deaconpoon">
               <AnimatedUnderlining
                 animate={uControls}
-                color="grey_5"
-                hoverColor="grey_5"
+                color="blue"
+                hoverColor="blue"
                 big
               >
                 {frontmatter.idea}
               </AnimatedUnderlining>
             </a>{" "}
             {frontmatter.talk}{" "}
-            <AnimatedUnderlining animate={uControls} color="grey_5" big>
+            <AnimatedUnderlining animate={uControls} color="pink" big>
               <Link to={"/#contact"}>{frontmatter.contact}</Link>
             </AnimatedUnderlining>
           </h1>

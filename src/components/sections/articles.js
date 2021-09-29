@@ -164,7 +164,7 @@ const Articles = () => {
                 >
                   <div className="card">
                     <span className="category">
-                      <Underlining color="tertiary" hoverColor="secondary">
+                      <Underlining color="secondary" hoverColor="secondary">
                         {item.categories[2]}
                       </Underlining>
                     </span>

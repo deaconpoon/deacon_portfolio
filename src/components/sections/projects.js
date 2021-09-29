@@ -137,7 +137,6 @@ const StyledProject = styled(motion.div)`
       margin-top: 0;
     }
     .category {
-      filter: grayscale(100%);
       font-size: 0.875rem;
       line-height: 1rem;
       text-transform: uppercase;
@@ -290,8 +289,8 @@ const Projects = ({ content }) => {
                       {frontmatter.tags.map(tag => (
                         <Underlining
                           key={tag}
-                          color="grey_5"
-                          hoverColor="grey_light"
+                          color="secondary"
+                          hoverColor="secondary"
                         >
                           {tag}
                         </Underlining>
